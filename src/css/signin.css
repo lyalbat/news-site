@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+h3{
+    font-size: 70px;
+}
+
+nav{
+    height: 70px;
+    background-color: black;
+    color: aliceblue;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+ul li{
+    list-style: none;
+}
+
+
+
+/*
+h3{
+    font-size: 80px;
+}
+
+.main-signin{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.title{
+    display: flex;
+}
+
+.title h3{
+    align-self: flex-start;
+}
+
+.form-singin{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style-type: none;
+}
+
+.form-singin input{
+    height: 43px;
+    width: 393px;
+    border-style: solid;
+    border-color: #D9D9D9;
+    border-radius: 20px;
+    color:black;
+    background-color: #D9D9D9;
+}
+
+
+
+.login-btn{
+    background-color: #37C6F3;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #37C6F3;
+    width: 393px;
+    height: 43px;
+}
+*/

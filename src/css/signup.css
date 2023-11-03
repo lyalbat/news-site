@@ -7,17 +7,11 @@
 nav{
     display: flex;
     height: 6rem;
-    justify-items: center;
+    padding: 0 2rem;
+    align-items: center;
+    justify-content: space-between;
     color: aliceblue;
     background-color: #F7F4F4;
-}
-
-.news-items{
-    display: flex;
-    gap: 5rem;
-    margin-top: 2.5rem;
-    margin-left: 20%;
-    margin-right: 20%;
 }
 
 a{
@@ -25,50 +19,61 @@ a{
     color: #6D6D6D;
 }
 
+a:hover{
+    cursor: default;
+}
+
+a:active{
+    color: #140303;
+}
+
+.news-items{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
 .icon-items{
     display: flex;
-    gap: 3rem;
-    margin-top: 1rem;
+    width: 10%;
+    justify-content: space-between;
 }
 
 .logo{
-    margin-left: 4rem;
-    margin-top: 1rem;
-    height: 4rem;
+    height: 3rem;
 }
 
 h3{
-    font-size: 70px;
+    font-size: 5rem;
     margin-bottom: 2rem;
 }
 
 main{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 5rem;
+    gap: 1rem;
 }
 
-.main-content{
+.input-form{
     display: flex;
     flex-direction: column;
-    width: 20%;
+    gap: 1rem;
 }
-
 .form-item{
     display: block;
-    width: 100%;
+    width: 23rem;
     padding: 0.8rem;
     border-radius: 2rem;
     border-style: none;
     background-color: #D9D9D9;
-    margin-bottom: 1rem;
 }
 
 .submit-btn{
-    margin-top: 1rem;
     border-radius: 2rem;
-    width: 100%;
+    width: 23rem;
     padding: 0.8rem;
     border-style: none;
     font-weight: 600;
@@ -99,4 +104,19 @@ p{
     color: #6D6D6D;
     font-weight: 600;
     text-decoration: none;
+}
+
+@media (max-width: 30rem) {
+    .header-main{
+        display: none;
+    }
+    h3{
+        font-size: 4rem;
+    }
+    .form-item{
+        width: 18rem;
+    }
+    .submit-btn{
+        width: 18rem;
+    }
 }

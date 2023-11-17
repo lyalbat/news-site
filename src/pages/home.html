@@ -27,6 +27,7 @@
         <article class="top-article">
             <div class="top-article-header">
                 <p class="top-article-adjective"><strong>Trending</strong></p>
+                <!-- <span class="top-article-adjective">Trending</span>               -->
                 <div class="top-article-icons">
                     <a href="#"><img src="../../assets/home/heart.svg" alt="" class="icon"></a>
                     <a href="#"><img src="../../assets/home/download.svg" alt="" class="icon"></a>
@@ -43,10 +44,81 @@
             <div>
                 <p>2 hours ago</p>
                 <div class="top-article-info">
-                    <p>By Lucy Hiddleston</p><p>|</p><p>4min read</p>
+                    <span>By Lucy Hiddleston</span>
+                    <span>4min read</span>
+                    <span>bada</span>
                 </div>
             </div>
         </article>
+        <article class="top-article__mobile"></article>
+
+        <article class="top-article">
+            <header class="top-article-header">
+                <!-- <p class="top-article-adjective"><strong>Trending</strong></p> -->
+                <span class="top-article-adjective">Trending</span>              
+                <div class="top-article-icons">
+                    <a href="#"><img src="../../assets/home/heart.svg" alt="" class="icon"></a>
+                    <a href="#"><img src="../../assets/home/download.svg" alt="" class="icon"></a>
+                    <a href="#"> <img src="../../assets/home/bookmark.svg" alt="" class="icon"></a>
+                </div>
+                <h1><strong>Cake meme reflects coronavirus absurdity in a world where nothing is what it seems</strong></h1>
+            </header>
+            <img src="../../assets/home/top-img.png" alt="image of a cake that looks like a lemon" class="top-img">
+            <div class="top-article-content">
+                <p>
+                    Earlier this month, a viral video depicting hyper-realistic cakes as everyday items
+                    had folks on social media double-guessing every other post, and sometimes even their
+                    own realities, effectively launching the next meme : “Is this real or is this cake?”
+                </p>
+                <div>
+                    <p>2 hours ago</p>
+                    <div class="top-article-info">
+                        <span>By Lucy Hiddleston</span>
+                        <span>4min read</span>
+                        <span>bada</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+
+
     </main>
 </body>
+<style>
+    .top-article {
+        display: grid;
+        grid-template-areas: "";
+        grid-template-columns: ;
+        grid-template-rows: ;
+    }
+    .top-article-header {
+        grid-area: header;
+    }
+
+
+    .top-article-info span {
+        display: inline-block;
+        color: blue;
+    }
+    .top-article-info span:last-child {
+        color: green;
+    }
+    .top-article-info span:first-child {
+        position: relative;
+        margin-right: 5px;
+    }
+    .top-article-info span:first-child::before {
+        content: '';
+        height: 100%;
+        width: 2px;
+        position:absolute;
+        right: -4.5px;
+        top:0;
+        background-color: red;
+    }
+    
+    
+</style>
 </html>
